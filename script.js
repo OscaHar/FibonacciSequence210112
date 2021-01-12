@@ -1,11 +1,14 @@
 let numberOne = 0;
 let numberTwo = 1;
 let numberNew;
+let printSequence = "0 1 ";
 
-let sequence;
-for (sequence = 1; sequence < 11; sequence++) {
+let sequence = 16;
+let i;
+for (i = 1; i < sequence; i++) {
   numberNew = numberOne + numberTwo;
   numberOne = numberTwo;
   numberTwo = numberNew;
-  console.log(numberNew);
+  printSequence += `${numberNew} `;
 }
+console.log(printSequence);
